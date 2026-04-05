@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이병도 충남교육감 예비후보 소개</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --main-color: #0056b3; 
+            --accent-color: #00aaff;
+            --point-color: #ffc107;
+            --font-main: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+        body { 
+            background-color: #f8f9fa; 
+            font-family: var(--font-main);
+            word-break: keep-all;
+            margin: 0;
+            padding: 0;
+        }
+        /* 헤더 디자인 */
+        .profile-header { 
+            background: white; 
+            color: black; 
+            padding: 40px 20px 30px; 
+            border-radius: 0 0 40px 40px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .profile-img { 
+            width: 160px; height: 160px; 
+            border: none;
+            object-fit: cover; 
+            margin-bottom: 20px;
+            /* Imgur 이미지 로딩 실패 시 대비한 기본 배경색 */
+            background-color: #eee; 
+        }
+        /* 카드 및 섹션 스타일 */
+        .card { border: none; border-radius: 20px; transition: transform 0.2s; }
+        .section-title { font-size: 1.25rem; font-weight: 700; color: var(--main-color); margin-bottom: 15px; display: flex; align-items: center; }
+        .section-title i { margin-right: 8px; }
+        
+        /* 경력 리스트 */
+        .career-list { padding-left: 0; list-style: none; }
+        .career-list li { position: relative; padding-left: 28px; margin-bottom: 12px; line-height: 1.4; font-weight: 500; font-size: 1.05rem; }
+        .career-list li::before { 
+            content: '✓'; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; 
+        }
+        .career-old { font-size: 0.95rem; color: #6c757d; border-left: 3px solid #dee2e6; padding-left: 15px; }
+
+        /* 비디오 컨테이너 */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* 후원회 박스 */
+        .donation-box { 
+            background-color: #fffdf5; 
+            border: 2px dashed var(--point-color); 
+            border-radius: 20px; 
+            padding: 25px;
+        }
+
+        /* 홈페이지 버튼 전용 스타일 */
+        .btn-homepage {
+            background: linear-gradient(90deg, var(--main-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 15px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .btn-homepage:hover { color: white; transform: translateY(-2px); }
+
+        /* 하단 여백 추가 */
+        .content-container { padding-bottom: 50px; }
+    </style>
+</head>
+<body>
+
+    <header class="profile-header text-center">
+        <img src="https://i.imgur.com/vEjtYKX.png" class="rounded-circle profile-img shadow-sm" alt="이병도 후보 사진">
+        <h2 class="fw-bold mb-1">이병도</h2>
+        <h6 class="fw-bold mb-1">충남교육감 예비후보</h6>        
+        <p class="lead mb-0 text-muted" style="font-size: 1.1rem;">충남 민주진보교육감 추진위 선정 후보</p>
+    </header>
+
+    <div class="container content-container my-4">
+
+        <div class="card shadow-sm mb-4 text-center">
+            <div class="card-body">
+                <h5 class="section-title text-start"><i class="bi bi-image-fill"></i>소개 웹자보</h5>
+                <blockquote class="imgur-embed-pub" lang="en" data-id="a/VJFMQSU" data-context="false" ><a href="//imgur.com/a/VJFMQSU"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+
+        <div class="card shadow-sm mb-4 border-top border-primary border-4">
+            <div class="card-body">
+                <h5 class="section-title"><i class="bi bi-person-check-fill"></i>주요 경력</h5>
+                <ul class="career-list mb-4">
+                    <li>충남 민주진보교육감 추진위 선정 후보</li>
+                    <li>충남민주혁신교육포럼 대표</li>
+                    <li>충남교육연구소장</li>
+                    <li>전국교육자치혁신연대 상임대표</li>
+                    <li>상명대 천안산학협력단 특임교수</li>
+                    <li>국립공주대 총동문회장</li>
+                </ul>
+                
+                <h6 class="fw-bold text-secondary mb-3"><i class="bi bi-clock-history me-2"></i>걸어온 길</h6>
+                <div class="career-old">
+                    <p class="mb-1">前 제32대 천안교육장 / 충남교육청 교육국장</p>
+                    <p class="mb-1">前 전교조 제15대 충남지부장</p>
+                    <p class="mb-0">前 제물포고, 인천고, 성환고, 당진고, 합덕여고, 천안쌍용고, 온양용화고 교사</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="section-title"><i class="bi bi-play-btn-fill"></i>후보 소개 영상</h5>
+                <div class="video-container shadow-sm">
+                    <iframe src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-2 mb-4 px-2">
+            <div class="col-6">
+                <a href="#" class="btn btn-primary w-100 py-3 shadow-sm border-0" style="border-radius: 15px; background-color: #1877F2;">
+                    <i class="bi bi-facebook fs-4 d-block mb-1"></i> 페이스북
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="#" class="btn btn-danger w-100 py-3 shadow-sm border-0" style="border-radius: 15px; background: linear-gradient(45deg, #f09433, #bc1888);">
+                    <i class="bi bi-instagram fs-4 d-block mb-1"></i> 인스타그램
+                </a>
+            </div>
+        </div>
+
+        <div class="donation-box shadow-sm text-center mb-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-heart-fill text-danger me-2"></i>후원회 안내</h5>
+            <div class="bg-white py-3 rounded-3 mb-3 border">
+                <span class="d-block text-secondary small">후원계좌</span>
+                <strong class="fs-4 text-dark" id="accountNo">농협 301-XXXX-XXXX-XX</strong>
+                <div class="text-muted small">(예금주: 이병도 후원회)</div>
+            </div>
+            <button class="btn btn-dark w-100 py-2 rounded-3" onclick="copyAccount()">
+                <i class="bi bi-files me-2"></i>계좌번호 복사하기
+            </button>
+        </div>
+
+        <div class="px-1">
+            <a href="https://leebyoungdo.co.kr" class="btn-homepage text-center shadow" target="_blank">
+                <i class="bi bi-house-door-fill me-2"></i> 이병도 후보 홈페이지 바로가기
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        function copyAccount() {
+            const accountText = document.getElementById('accountNo').innerText;
+            const onlyNumber = accountText.replace('농협 ', '');
+            navigator.clipboard.writeText(onlyNumber).then(() => {
+                alert("계좌번호가 복사되었습니다: " + onlyNumber);
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
